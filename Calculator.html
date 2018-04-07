@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator in JS</title>
+<style>
+
+h3	{
+	color: red;
+}
+
+</style>
+</head>
+<body>
+
+<button>I AM A BUTTON</button>
+
+<h1>This is my Calculator Written in Javascript</h1>
+<h2>Instructions:</h2>
+<p>Enter first number, then the second number. Next, select the symbol to perform the respective equation.</p>
+
+<h3>Input Field 1</h3>	
+<input id="numb1" style='border-radius: 5px'>
+
+<h3>Input Field 2</h3>
+<input id="numb2">
+
+<h3>Symbol</h3>
+<button id='add_button' onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="multiply()">*</button>
+<button onclick="divide()">/</button>
+
+<h3>Output</h3>
+<p id="answer"></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function add() {
+	
+	var answer;
+	var	input1 = document.getElementById("numb1").value;
+	var	input2 = document.getElementById("numb2").value;
+	input1 = Number(input1);
+	input2 = Number(input2);
+	console.log('I AM ADDING: ' + input1 + ' and ' + input2);
+	answer = input1 + input2;
+
+
+	document.getElementById("answer").innerHTML = answer;
+}
+
+function subtract() {
+	console.log('I AM SUBTRACINT');
+	var answer;
+	var	input1 = document.getElementById("numb1").value;
+	var	input2 = document.getElementById("numb2").value;
+	input1 = Number(input1);
+	input2 = Number(input2);
+	answer = input1 - input2;
+
+	document.getElementById("answer").innerHTML = answer;
+}
+
+function multiply() {
+	console.log('I AM MULTIP');
+	var answer;
+	var	input1 = document.getElementById("numb1").value;
+	var	input2 = document.getElementById("numb2").value;
+	input1 = Number(input1);
+	input2 = Number(input2);
+	answer = input1 * input2;
+
+	document.getElementById("answer").innerHTML = answer;
+}
+
+function divide() {
+	console.log('I AM DIVIDING');
+	var answer;
+	var	input1 = document.getElementById("numb1").value;
+	var	input2 = document.getElementById("numb2").value;
+	input1 = Number(input1);
+	input2 = Number(input2);
+	answer = input1 / input2;
+
+	document.getElementById("answer").innerHTML = answer;
+}
+
+
+</script>
+
+</body>
+</html>
