@@ -1,0 +1,22 @@
+.container {
+  background: #f7f7f7;
+}
+
+.container div {
+	display: inline;
+}
+
+.container label {
+	font-weight: bold;
+}
+
+#final:before {
+	font-weight: bold;
+	content: 'Your answer is: ';
+}
+
+#final sup {
+	font-size: 14px;
+	top: 0px;
+}
+
